@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ticket_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:clickable="false"
+    android:focusable="true"
+    app:cardElevation="0dp"
+    app:strokeColor="#CCCCCC"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/total_items_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/nbr_items"
+            android:textAppearance="@style/TextAppearance.MyTheme.Body1"
+            android:textColor="@color/dark_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Items(3)" />
+
+        <TextView
+            android:id="@+id/price_items_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            android:textAppearance="@style/TextAppearance.MyTheme.Body1"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/total_items_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/total_items_label"
+            tools:text="10 TND" />
+
+        <TextView
+            android:id="@+id/price_shipping_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/paid"
+            android:textAppearance="@style/TextAppearance.MyTheme.Body1"
+            android:textColor="@color/dark_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/total_items_label" />
+
+        <TextView
+            android:id="@+id/price_paid_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            android:textAppearance="@style/TextAppearance.MyTheme.Body1"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/price_shipping_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/price_shipping_label"
+            tools:text="10 TND" />
+
+        <ImageView
+            android:id="@+id/card_dotted_divider"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/todo"
+            android:layerType="software"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/price_shipping_label"
+            app:srcCompat="@drawable/dotted_line_drawable" />
+
+        <TextView
+            android:id="@+id/price_total_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/rest"
+            android:textAppearance="@style/TextAppearance.MyTheme.Body1"
+            android:textColor="@color/dark_gray"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_dotted_divider" />
+
+        <TextView
+            android:id="@+id/price_rest_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            android:textAppearance="@style/TextAppearance.MyTheme.Body1"
+            android:textColor="@color/color_primary"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/price_total_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/price_total_label"
+            tools:text="10 TND" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

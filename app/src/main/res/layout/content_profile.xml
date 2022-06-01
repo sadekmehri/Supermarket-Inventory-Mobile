@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.caisse.activities.WelcomeActivity"
+    tools:showIn="@layout/activity_profile">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/headerText"
+                android:layout_marginBottom="10sp"
+                android:text="@string/account_info" />
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+
+                <ImageView
+                    android:id="@+id/nameImageView"
+                    style="@style/profileDetailsImage"
+                    android:contentDescription="@string/profile"
+                    android:src="@drawable/ic_name" />
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toEndOf="@id/nameImageView"
+                    android:text="@string/name" />
+
+                <TextView
+                    android:id="@+id/nameProfileView"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toEndOf="@id/nameImageView" />
+
+            </RelativeLayout>
+
+            <View style="@style/profileDetailsView" />
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+
+                <ImageView
+                    android:id="@+id/mobileImageView"
+                    style="@style/profileDetailsImage"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_mobile" />
+
+                <TextView
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toEndOf="@id/mobileImageView"
+                    android:text="@string/mobile" />
+
+                <TextView
+                    android:id="@+id/mobileProfileView"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toEndOf="@id/mobileImageView" />
+
+            </RelativeLayout>
+
+            <View style="@style/profileDetailsView" />
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+
+                <ImageView
+                    android:id="@+id/emailImageView"
+                    style="@style/profileDetailsImage"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_email" />
+
+                <TextView
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toEndOf="@id/emailImageView"
+                    android:text="@string/email" />
+
+                <TextView
+                    android:id="@+id/emailProfileView"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toEndOf="@id/emailImageView" />
+
+            </RelativeLayout>
+
+
+            <View style="@style/profileDetailsView" />
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+
+                <ImageView
+                    android:id="@+id/dobImageView"
+                    style="@style/profileDetailsImage"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_dob" />
+
+                <TextView
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toEndOf="@id/dobImageView"
+                    android:text="@string/dob" />
+
+                <TextView
+                    android:id="@+id/dobProfileView"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toEndOf="@id/dobImageView" />
+
+            </RelativeLayout>
+
+            <View style="@style/profileDetailsView" />
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+
+                <ImageView
+                    android:id="@+id/storeImageView"
+                    style="@style/profileDetailsImage"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_store" />
+
+                <TextView
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toEndOf="@id/storeImageView"
+                    android:text="@string/store" />
+
+                <TextView
+                    android:id="@+id/storeProfileView"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toEndOf="@id/storeImageView" />
+
+            </RelativeLayout>
+
+            <View style="@style/profileDetailsView" />
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+
+                <ImageView
+                    android:id="@+id/countryImageView"
+                    style="@style/profileDetailsImage"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_country" />
+
+                <TextView
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toEndOf="@id/countryImageView"
+                    android:text="@string/country" />
+
+                <TextView
+                    android:id="@+id/countryProfileView"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toEndOf="@id/countryImageView" />
+
+            </RelativeLayout>
+
+            <View style="@style/profileDetailsView" />
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+
+                <ImageView
+                    android:id="@+id/locationImageView"
+                    style="@style/profileDetailsImage"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_location" />
+
+                <TextView
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toEndOf="@id/locationImageView"
+                    android:text="@string/location" />
+
+                <TextView
+                    android:id="@+id/locationProfileView"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toEndOf="@id/locationImageView" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.core.widget.NestedScrollView>

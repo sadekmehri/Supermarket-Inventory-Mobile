@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/cartItem">
+
+    <fragment
+        android:id="@+id/profileItem"
+        android:name="com.example.caisse.fragments.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/cartItem"
+        android:name="com.example.caisse.fragments.CartFragment"
+        android:label="Cart"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/ticketItem"
+        android:name="com.example.caisse.fragments.TicketFragment"
+        android:label="Ticket"
+        tools:layout="@layout/fragment_ticket" />
+
+</navigation>

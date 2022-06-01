@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cart_fragment"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70sp">
+
+        <ImageView
+            android:id="@+id/cart_empty_image_view"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:contentDescription="@string/todo"
+            android:gravity="center"
+            android:src="@drawable/ic_cart_empty"
+            android:text="@string/no_items_in_cart_text"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.MyTheme.Headline3"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cart_empty_text_view"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:fontFamily="@font/segoe_ui_bold"
+            android:gravity="center"
+            android:text="@string/no_items_in_cart_text"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.MyTheme.Headline3"
+            android:textColor="@color/color_black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.7" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cart_products_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80sp"
+            android:clipToPadding="false"
+            android:foregroundGravity="center"
+            android:overScrollMode="never"
+            android:padding="10sp"
+            app:flow_horizontalAlign="center"
+            app:flow_verticalAlign="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:itemCount="1"
+            tools:listitem="@layout/cart_list_item" />
+
+        <Button
+            android:id="@+id/scan_from_fragment"
+            android:layout_width="90sp"
+            android:layout_height="45sp"
+            android:layout_marginEnd="25dp"
+            android:backgroundTint="@color/color_primary"
+            android:text="@string/cart_check_out_btn"
+            android:textAllCaps="false"
+            android:textColorHint="@color/color_white"
+            android:translationY="-10sp"
+            app:layout_constraintBottom_toTopOf="@+id/cart_products_recycler_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/delete_all_items"
+            android:layout_width="90sp"
+            android:layout_height="45sp"
+            android:backgroundTint="@color/color_primary"
+            android:enabled="false"
+            android:text="@string/cart_clear"
+            android:textAllCaps="false"
+            android:textColorHint="@color/color_white"
+            android:translationY="-10sp"
+            app:layout_constraintBottom_toTopOf="@+id/cart_products_recycler_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.065"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.885" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
+
+

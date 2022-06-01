@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.caisse.activities.WelcomeActivity"
+    tools:showIn="@layout/activity_profile">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/profileLayoutShimmer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/headerText"
+                android:layout_marginBottom="10sp"
+                android:background="@color/shimmer_color" />
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+
+                <ImageView
+                    android:id="@+id/nameImageView"
+                    style="@style/profileDetailsImage"
+                    android:background="@color/shimmer_color"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toEndOf="@id/nameImageView"
+                    android:background="@color/shimmer_color"
+                    android:text="@string/todo"
+                    android:textColor="@color/shimmer_color"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/nameProfileView"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toEndOf="@id/nameImageView"
+                    android:background="@color/shimmer_color"
+                    android:text="@string/email"
+                    android:textColor="@color/shimmer_color" />
+
+            </RelativeLayout>
+
+            <View style="@style/profileDetailsView" />
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+
+                <ImageView
+                    android:id="@+id/mobileImageView"
+                    style="@style/profileDetailsImage"
+                    android:background="@color/shimmer_color"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toEndOf="@id/mobileImageView"
+                    android:background="@color/shimmer_color"
+                    android:text="@string/todo"
+                    android:textColor="@color/shimmer_color" />
+
+                <TextView
+                    android:id="@+id/mobileProfileView"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toEndOf="@id/mobileImageView"
+                    android:background="@color/shimmer_color"
+                    android:text="@string/email"
+                    android:textColor="@color/shimmer_color" />
+
+            </RelativeLayout>
+
+            <View style="@style/profileDetailsView" />
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+
+                <ImageView
+                    android:id="@+id/emailImageView"
+                    style="@style/profileDetailsImage"
+                    android:background="@color/shimmer_color"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toEndOf="@id/emailImageView"
+                    android:background="@color/shimmer_color"
+                    android:text="@string/todo"
+                    android:textColor="@color/shimmer_color" />
+
+                <TextView
+                    android:id="@+id/emailProfileView"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toEndOf="@id/emailImageView"
+                    android:background="@color/shimmer_color"
+                    android:text="@string/email"
+                    android:textColor="@color/shimmer_color" />
+
+            </RelativeLayout>
+
+
+            <View style="@style/profileDetailsView" />
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+
+                <ImageView
+                    android:id="@+id/dobImageView"
+                    style="@style/profileDetailsImage"
+                    android:background="@color/shimmer_color"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toEndOf="@id/dobImageView"
+                    android:background="@color/shimmer_color"
+                    android:text="@string/todo"
+                    android:textColor="@color/shimmer_color" />
+
+                <TextView
+                    android:id="@+id/dobProfileView"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toEndOf="@id/dobImageView"
+                    android:background="@color/shimmer_color"
+                    android:text="@string/email"
+                    android:textColor="@color/shimmer_color" />
+
+            </RelativeLayout>
+
+            <View style="@style/profileDetailsView" />
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+
+                <ImageView
+                    android:id="@+id/storeImageView"
+                    style="@style/profileDetailsImage"
+                    android:background="@color/shimmer_color"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toEndOf="@id/storeImageView"
+                    android:background="@color/shimmer_color"
+                    android:text="@string/todo"
+                    android:textColor="@color/shimmer_color" />
+
+                <TextView
+                    android:id="@+id/storeProfileView"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toEndOf="@id/storeImageView"
+                    android:background="@color/shimmer_color"
+                    android:text="@string/email"
+                    android:textColor="@color/shimmer_color" />
+
+            </RelativeLayout>
+
+            <View style="@style/profileDetailsView" />
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+
+                <ImageView
+                    android:id="@+id/countryImageView"
+                    style="@style/profileDetailsImage"
+                    android:background="@color/shimmer_color"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toEndOf="@id/countryImageView"
+                    android:background="@color/shimmer_color"
+                    android:text="@string/todo"
+                    android:textColor="@color/shimmer_color" />
+
+                <TextView
+                    android:id="@+id/countryProfileView"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toEndOf="@id/countryImageView"
+                    android:background="@color/shimmer_color"
+                    android:text="@string/email"
+                    android:textColor="@color/shimmer_color" />
+
+            </RelativeLayout>
+
+            <View style="@style/profileDetailsView" />
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+
+                <ImageView
+                    android:id="@+id/locationImageView"
+                    style="@style/profileDetailsImage"
+                    android:background="@color/shimmer_color"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toEndOf="@id/locationImageView"
+                    android:background="@color/shimmer_color"
+                    android:text="@string/todo"
+                    android:textColor="@color/shimmer_color" />
+
+                <TextView
+                    android:id="@+id/locationProfileView"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toEndOf="@id/locationImageView"
+                    android:background="@color/shimmer_color"
+                    android:text="@string/email"
+                    android:textColor="@color/shimmer_color" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/cartItem"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_add_shopping_cart_24"
+        android:title="@string/cart" />
+
+    <item
+        android:id="@+id/ticketItem"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_sticky_note_2_24"
+        android:title="@string/ticket" />
+
+    <item
+        android:id="@+id/profileItem"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_supervised_user_circle_24"
+        android:title="@string/profile" />
+
+    <item
+        android:id="@+id/logoutItem"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_login_24"
+        android:title="@string/logout" />
+
+</menu>

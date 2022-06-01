@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ticket_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.TicketFragment">
+
+
+    <include
+        android:id="@+id/cart_total"
+        layout="@layout/layout_price_card"
+        android:layout_width="360dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="210dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_5_d"
+        android:layout_width="90sp"
+        android:layout_height="55sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:contentDescription="@string/todo"
+        android:layerType="software"
+        android:src="@drawable/ic_5_d"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cart_total"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_20_d"
+        android:layout_width="90sp"
+        android:layout_height="55sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:contentDescription="@string/todo"
+        android:layerType="software"
+        android:src="@drawable/ic_20_d"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cart_total"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_10_d"
+        android:layout_width="90sp"
+        android:layout_height="55sp"
+        android:layout_marginTop="25dp"
+        android:contentDescription="@string/todo"
+        android:layerType="software"
+        android:src="@drawable/ic_10_d"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cart_total"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_30_d"
+        android:layout_width="90sp"
+        android:layout_height="55sp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:contentDescription="@string/todo"
+        android:focusable="true"
+        android:layerType="software"
+        android:src="@drawable/ic_30_d"
+        app:layout_constraintEnd_toStartOf="@+id/img_50_d"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_10_d"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_50_d"
+        android:layout_width="90sp"
+        android:layout_height="55sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="88dp"
+        android:contentDescription="@string/todo"
+        android:layerType="software"
+        android:src="@drawable/ic_50_d"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_10_d"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

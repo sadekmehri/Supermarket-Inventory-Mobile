@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#0077b6</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_text_black">#000000</color>
+    <color name="color_black">#000000</color>
+    <color name="color_accent">#03dac5</color>
+    <color name="color_edittext">#14000000</color>
+    <color name="color_button">#0e68ff</color>
+    <color name="color_placeholder">#505050</color>
+    <color name="color_text_primary">#0e68ff</color>
+    <color name="color_red">#e63946</color>
+    <color name="color_green">#06d6a0</color>
+    <color name="profile_primary_dark">#ff3b30</color>
+    <color name="profile_accent_color">#f7f7f7</color>
+    <color name="black_text_color">#000</color>
+    <color name="profile_edit_text_color">#707070</color>
+    <color name="shimmer_color">#d9d9d9</color>
+    <color name="purple_200">#ffbb86fc</color>
+    <color name="purple_500">#ff6200ee</color>
+    <color name="purple_700">#ff3700b3</color>
+    <color name="teal_200">#ff03dac5</color>
+    <color name="teal_700">#ff018786</color>
+    <color name="green_500">#018786</color>
+    <color name="red_600">#b00020</color>
+    <color name="holo_red_light">#ff4444</color>
+    <color name="black">#ff000000</color>
+    <color name="dark_gray">#505050</color>
+    <color name="gray">#999999</color>
+    <color name="blue_500">#004dca</color>
+    <color name="color_edit_text">#14000000</color>
+    <color name="blue_200">#4284ed</color>
+    <color name="transparent">#00000000</color>
+    <color name="gold">#ffd770</color>
+    <color name="light_gray">#cccccc</color>
+    <color name="blue_shadow_color">#90e0ef</color>
+</resources>
